@@ -1,6 +1,8 @@
 const { Router } = require('express')
 const AccountController = require('./controller/Account')
+const UserController = require('./controller/User')
 const accountController = new AccountController({})
+const userController = new UserController({})
 const router = Router()
 
 /**
@@ -126,5 +128,36 @@ router.delete('/account/transaction/:id', accountController.deleteTransaction.bi
  *         description: Token invalido
  */
 router.get('/account/:accountId/statement', accountController.getStatment.bind(accountController))
+
+/**
+ * @swagger
+ * /user/profile:
+ *   put:
+ *     summary: Atualiza o perfil do usuário autenticado
+ *     tags: [Users]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               username:
+ *                 type: string
+ *               email:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Perfil atualizado com sucesso
+ *       404:
+ *         description: Usuário não encontrado
+ *       401:
+ *         description: Token inválido
+ */
+router.put('/user/profile', userController.update.bind(userController))
 
 module.exports = router

@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "_id": "6a18f2f8a2c2a461f33b8a9c",
+      "__v": 0,
+      "createdAt": "2026-06-09T22:04:01.827Z",
+      "email": "thiago@thiago",
+      "password": "thiagoo",
+      "updatedAt": "2026-06-09T22:04:01.827Z",
+      "username": "thiagoo"
+    }
+  ],
+  "transactions": [
+    {
+      "_id": "6a288f06f5928e99b947bfa0",
+      "type": "Credit",
+      "value": 0.5,
+      "from": "Depósito",
+      "urlAnexo": null,
+      "date": "2026-06-09T22:09:10.236Z",
+      "accountId": "6a18f2f9a2c2a461f33b8a9e",
+      "createdAt": "2026-06-09T22:09:10.266Z",
+      "updatedAt": "2026-06-09T22:09:10.266Z",
+      "__v": 0
+    }
+  ],
+  "accounts": [
+    {
+      "_id": "6a18f2f9a2c2a461f33b8a9e",
+      "__v": 0,
+      "createdAt": "2026-06-09T22:04:01.880Z",
+      "type": "Debit",
+      "updatedAt": "2026-06-09T22:04:01.880Z",
+      "userId": "6a18f2f8a2c2a461f33b8a9c"
+    }
+  ],
+  "cards": [
+    {
+      "_id": "6a18f2f9a2c2a461f33b8aa0",
+      "__v": 0,
+      "accountId": "6a18f2f9a2c2a461f33b8a9e",
+      "createdAt": "2026-06-09T22:04:01.893Z",
+      "cvc": "505",
+      "dueDate": "2027-01-07T00:00:00.000Z",
+      "functions": "Debit",
+      "is_blocked": false,
+      "name": "thiago",
+      "number": "13748712374891010",
+      "paymentDate": null,
+      "type": "Debit",
+      "updatedAt": "2026-06-09T22:04:01.893Z"
+    }
+  ],
+  "investments": []
+}

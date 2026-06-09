@@ -2,6 +2,7 @@ const Express = require('express')
 const publicRoutes = require('./publicRoutes')
 const routes = require('./routes')
 const connectDB = require('./infra/mongoose/mongooseConect');
+require('./infra/mongoose/modelos');
 const app = new Express()
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocs =  require('./swagger')
@@ -30,8 +31,9 @@ app.use(routes)
 
 const serverPromise = connectDB().then(() => {
     if (process.env.NODE_ENV !== 'test') {
-        app.listen(process.env.port || 3000, () => {
-            console.log('Servidor rodando na porta 3000');
+        const port = process.env.PORT || 3000;
+        app.listen(port, () => {
+            console.log(`Servidor rodando na porta ${port}`);
         });
     }
 });

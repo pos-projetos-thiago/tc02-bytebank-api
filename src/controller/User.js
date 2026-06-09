@@ -15,6 +15,7 @@ class UserController {
       salvarUsuario: require('../feature/User/salvarUsuario'),
       saveAccount: require('../feature/Account/saveAccount'),
       getUser: require('../feature/User/getUser'),
+      updateUser: require('../feature/User/updateUser'),
     }, di)
   }
 
@@ -84,6 +85,37 @@ class UserController {
       }
     })
   }
+
+  async update(req, res) {
+    const { userRepository, updateUser } = this.di
+    const userId = req.user.id
+    const userData = req.body
+
+    try {
+      const updatedUser = await updateUser({ 
+        userId, 
+        userData, 
+        repository: userRepository 
+      })
+
+      if (!updatedUser) {
+        return res.status(404).json({ message: 'Usuário não encontrado' })
+      }
+
+      const { password, ...userWithoutPassword } = updatedUser.toObject()
+
+      res.status(200).json({
+        message: 'Usuário atualizado com sucesso',
+        result: userWithoutPassword
+      })
+    } catch (error) {
+      console.error('Erro ao atualizar usuário:', error)
+      res.status(500).json({ 
+        message: error.message || 'Erro no servidor' 
+      })
+    }
+  }
+
   static getToken(token) {
     try {
         const decoded = jwt.verify(token, JWT_SECRET)

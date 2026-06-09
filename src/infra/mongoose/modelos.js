@@ -112,6 +112,8 @@ const UserSchema = new Schema({
   email: {
     type: String,
     required: true,
+    unique: true, // Email deve ser único!
+    index: true   // Criar índice para performance
   },
   password: {
     type: String,

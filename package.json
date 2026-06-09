@@ -1,24 +1,22 @@
 {
-  "name": "nodejs-com-nosql",
+  "name": "bytebank-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend REST para o Bytebank - Sistema de gerenciamento financeiro pessoal desenvolvido no Tech Challenge FIAP Pós-Tech",
+  "main": "src/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/index.js",
     "dev": "cross-env NODE_ENV=development nodemon src/index.js",
     "test": "cross-env NODE_ENV=test jest --runInBand"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Thiago Soares - RM 373636",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongo": "^0.1.0",
     "mongodb": "^6.8.0",
     "mongodb-memory-server": "^9.4.0",
     "mongoose": "^8.5.0",
-    "sequelize": "^6.37.5",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },

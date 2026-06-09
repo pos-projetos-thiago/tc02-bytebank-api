@@ -1,6 +1,5 @@
 const TransactionDTO = require('../models/DetailedAccount')
 
-
 class AccountController {
   constructor(di = {}) {
     this.di = Object.assign({
@@ -76,7 +75,7 @@ class AccountController {
       urlAnexo
     }
 
-    Object.keys(updates).forEach((key) => updates[key] === undefined && delete updates[key])
+    Object.keys(updates).forEach(key => updates[key] === undefined && delete updates[key])
 
     try {
       const transaction = await updateTransaction({ transactionId: id, updates, repository: transactionRepository })

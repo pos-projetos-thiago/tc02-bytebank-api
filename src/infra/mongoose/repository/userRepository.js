@@ -13,8 +13,21 @@ const get = async (user={}) => {
     return User.find(user);
 };
 
+const findById = async (id) => {
+    return User.findById(id);
+};
+
+const updateById = async (id, updateData) => {
+    return User.findByIdAndUpdate(id, updateData, { 
+        new: true, // Retorna o documento atualizado
+        runValidators: true // Executa validações do schema
+    });
+};
+
 module.exports = {
   create,
   getById,
-  get
+  get,
+  findById,
+  updateById
 };

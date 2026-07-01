@@ -73,6 +73,14 @@ const DetailedAccountSchema = new Schema({
   urlAnexo: {
     type: String,
   },
+  attachments: [{
+    id: String,
+    fileName: String,
+    fileUrl: String,
+    fileSize: Number,
+    fileType: String,
+    uploadedAt: Date
+  }],
   date: {
     type: Date,
     required: true

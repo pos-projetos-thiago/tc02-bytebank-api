@@ -1,4 +1,5 @@
 const TransactionDTO = require('../models/DetailedAccount')
+const { saveBackupData } = require('../infra/mongoose/mongooseConect')
 
 class AccountController {
   constructor(di = {}) {
@@ -53,6 +54,7 @@ class AccountController {
     const transactionDTO = new TransactionDTO({ accountId, value, from, to, anexo, urlAnexo, type, date: new Date() })
 
     const transaction = await saveTransaction({ transaction: transactionDTO, repository: transactionRepository })
+    await saveBackupData()
     
     res.status(201).json({
       message: 'Transação criada com sucesso',
@@ -84,6 +86,7 @@ class AccountController {
         return res.status(404).json({ message: 'Transação não encontrada' })
       }
 
+      await saveBackupData()
       res.status(200).json({
         message: 'Transação atualizada com sucesso',
         result: transaction
@@ -104,6 +107,7 @@ class AccountController {
         return res.status(404).json({ message: 'Transação não encontrada' })
       }
 
+      await saveBackupData()
       res.status(204).send()
     } catch (error) {
       res.status(500).json({ message: 'Erro ao deletar transação' })

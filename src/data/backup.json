@@ -3,72 +3,33 @@
     {
       "_id": "6a18f2f8a2c2a461f33b8a9c",
       "__v": 0,
-      "createdAt": "2026-07-01T23:51:32.345Z",
+      "createdAt": "2026-07-02T18:04:14.332Z",
       "email": "thiago@thiago",
       "password": "thiagoo",
-      "updatedAt": "2026-07-01T23:51:32.345Z",
+      "updatedAt": "2026-07-02T18:04:14.332Z",
       "username": "thi"
     },
     {
       "_id": "6a3b236395285a8ecf774297",
       "__v": 0,
-      "createdAt": "2026-07-01T23:51:32.364Z",
+      "createdAt": "2026-07-02T18:04:14.346Z",
       "email": "testar@testar.com",
       "password": "testar",
-      "updatedAt": "2026-07-01T23:51:32.364Z",
+      "updatedAt": "2026-07-02T18:04:14.346Z",
       "username": "thiago"
     }
   ],
   "transactions": [
     {
-      "_id": "6a431a4314497a6802dd405d",
-      "__v": 0,
-      "accountId": "6a18f2f9a2c2a461f33b8a9e",
-      "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.380Z",
-      "date": "2026-06-30T01:22:11.041Z",
-      "from": "Depósito",
-      "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.380Z",
-      "urlAnexo": null,
-      "value": 10
-    },
-    {
-      "_id": "6a431a5214497a6802dd4065",
-      "__v": 0,
-      "accountId": "6a18f2f9a2c2a461f33b8a9e",
-      "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.385Z",
-      "date": "2026-06-30T01:22:26.794Z",
-      "from": "Depósito",
-      "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.385Z",
-      "urlAnexo": null,
-      "value": 10
-    },
-    {
-      "_id": "6a44758df46ab52dd885aa16",
-      "__v": 0,
-      "accountId": "6a18f2f9a2c2a461f33b8a9e",
-      "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.390Z",
-      "date": "2026-07-01T02:03:57.846Z",
-      "from": "Depósito",
-      "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.390Z",
-      "urlAnexo": null,
-      "value": 0.03
-    },
-    {
       "_id": "6a447591f46ab52dd885aa1b",
       "__v": 0,
       "accountId": "6a18f2f9a2c2a461f33b8a9e",
       "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.393Z",
+      "createdAt": "2026-07-02T18:04:14.358Z",
       "date": "2026-07-01T02:04:01.482Z",
       "from": "Depósito",
       "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.393Z",
+      "updatedAt": "2026-07-02T18:04:14.358Z",
       "urlAnexo": null,
       "value": 24.32
     },
@@ -77,50 +38,24 @@
       "__v": 0,
       "accountId": "6a18f2f9a2c2a461f33b8a9e",
       "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.398Z",
+      "createdAt": "2026-07-02T18:04:14.363Z",
       "date": "2026-07-01T02:04:04.459Z",
       "from": "Depósito",
       "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.398Z",
+      "updatedAt": "2026-07-02T18:04:14.363Z",
       "urlAnexo": null,
       "value": 3.55
-    },
-    {
-      "_id": "6a447597f46ab52dd885aa25",
-      "__v": 0,
-      "accountId": "6a18f2f9a2c2a461f33b8a9e",
-      "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.402Z",
-      "date": "2026-07-01T02:04:07.290Z",
-      "from": "Depósito",
-      "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.402Z",
-      "urlAnexo": null,
-      "value": 45354.54
-    },
-    {
-      "_id": "6a447599f46ab52dd885aa2a",
-      "__v": 0,
-      "accountId": "6a18f2f9a2c2a461f33b8a9e",
-      "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.405Z",
-      "date": "2026-07-01T02:04:09.265Z",
-      "from": "Depósito",
-      "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.405Z",
-      "urlAnexo": null,
-      "value": 4654.54
     },
     {
       "_id": "6a44759bf46ab52dd885aa2f",
       "__v": 0,
       "accountId": "6a18f2f9a2c2a461f33b8a9e",
       "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.408Z",
+      "createdAt": "2026-07-02T18:04:14.370Z",
       "date": "2026-07-01T02:04:11.708Z",
       "from": "Depósito",
       "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.408Z",
+      "updatedAt": "2026-07-02T18:04:14.370Z",
       "urlAnexo": null,
       "value": 0.23
     },
@@ -129,11 +64,11 @@
       "__v": 0,
       "accountId": "6a18f2f9a2c2a461f33b8a9e",
       "attachments": [],
-      "createdAt": "2026-07-01T23:51:32.411Z",
+      "createdAt": "2026-07-02T18:04:14.373Z",
       "date": "2026-07-01T02:04:14.226Z",
       "from": "Depósito",
       "type": "Credit",
-      "updatedAt": "2026-07-01T23:51:32.411Z",
+      "updatedAt": "2026-07-02T18:04:14.373Z",
       "urlAnexo": null,
       "value": 2.33
     }
@@ -142,17 +77,17 @@
     {
       "_id": "6a18f2f9a2c2a461f33b8a9e",
       "__v": 0,
-      "createdAt": "2026-07-01T23:51:32.369Z",
+      "createdAt": "2026-07-02T18:04:14.351Z",
       "type": "Debit",
-      "updatedAt": "2026-07-01T23:51:32.369Z",
+      "updatedAt": "2026-07-02T18:04:14.351Z",
       "userId": "6a18f2f8a2c2a461f33b8a9c"
     },
     {
       "_id": "6a3b236395285a8ecf774299",
       "__v": 0,
-      "createdAt": "2026-07-01T23:51:32.374Z",
+      "createdAt": "2026-07-02T18:04:14.355Z",
       "type": "Debit",
-      "updatedAt": "2026-07-01T23:51:32.374Z",
+      "updatedAt": "2026-07-02T18:04:14.355Z",
       "userId": "6a3b236395285a8ecf774297"
     }
   ],
@@ -161,7 +96,7 @@
       "_id": "6a18f2f9a2c2a461f33b8aa0",
       "__v": 0,
       "accountId": "6a18f2f9a2c2a461f33b8a9e",
-      "createdAt": "2026-07-01T23:51:32.414Z",
+      "createdAt": "2026-07-02T18:04:14.377Z",
       "cvc": "505",
       "dueDate": "2027-01-07T00:00:00.000Z",
       "functions": "Debit",
@@ -170,13 +105,13 @@
       "number": "13748712374891010",
       "paymentDate": null,
       "type": "Debit",
-      "updatedAt": "2026-07-01T23:51:32.414Z"
+      "updatedAt": "2026-07-02T18:04:14.377Z"
     },
     {
       "_id": "6a3b236395285a8ecf77429b",
       "__v": 0,
       "accountId": "6a3b236395285a8ecf774299",
-      "createdAt": "2026-07-01T23:51:32.419Z",
+      "createdAt": "2026-07-02T18:04:14.380Z",
       "cvc": "505",
       "dueDate": "2027-01-07T00:00:00.000Z",
       "functions": "Debit",
@@ -185,7 +120,7 @@
       "number": "13748712374891010",
       "paymentDate": null,
       "type": "Debit",
-      "updatedAt": "2026-07-01T23:51:32.419Z"
+      "updatedAt": "2026-07-02T18:04:14.380Z"
     }
   ],
   "investments": []

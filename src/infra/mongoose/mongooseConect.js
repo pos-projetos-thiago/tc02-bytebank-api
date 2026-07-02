@@ -188,3 +188,4 @@ async function getCurrentMongoData() {
 }
 
 module.exports = connectDB;
+module.exports.saveBackupData = saveBackupData;

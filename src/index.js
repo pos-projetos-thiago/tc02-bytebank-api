@@ -15,6 +15,11 @@ app.use(cors({
     origin: '*'
 }))
 
+// Health check para o Render (não requer autenticação)
+app.get('/healthz', (req, res) => {
+    res.status(200).json({ status: 'ok', service: 'bytebank-api' })
+})
+
 app.use(publicRoutes)
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use((req, res, next) => {

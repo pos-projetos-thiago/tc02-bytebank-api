@@ -29,7 +29,9 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "mongodbMemoryServer": {
-    "version": "7.0.3"
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "7.0.3"
+    }
   }
 }
